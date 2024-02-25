@@ -1,4 +1,7 @@
 import { Inter } from "next/font/google";
+
+import Navbar from "./components/navbar/Navbar";
+
 import "./globals.css";
 
 const inter = Inter({ subsets: [ "latin" ] });
@@ -8,10 +11,17 @@ export const metadata = {
   description: "Professional portfolio",
 };
 
-export default function RootLayout({ children }) {
+const RootLayout = ({ children }) => {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html>
+      <body className={inter.className}>
+        <Navbar />
+        <div className="p-5">
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
+
+export default RootLayout;
