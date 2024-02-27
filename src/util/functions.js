@@ -1,1 +1,0 @@
-// check the system language

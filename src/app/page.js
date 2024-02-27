@@ -1,4 +1,6 @@
+import React from "react";
 import Image from "next/image";
+
 import MacLinks from "./components/button/MacLinks";
 
 import { alts, home, language } from "@/util/translations";

@@ -13,20 +13,32 @@ export const alts = {
 export const nav = {
     en: {
         home: {
-            text: "HOME",
+            text: "HOME"
         },
         who: {
-            text: "WHO IS MAC",
+            text: "WHO"
         },
         work: {
-            text: "PROJECTS",
+            text: "PROJECTS"
         },
         contact: {
-            text: "CONTACT",
-        },
-
+            text: "CONTACT"
+        }
     },
-    es: {}
+    es: {
+        home: {
+            text: "INICIO"
+        },
+        who: {
+            text: "QUIÉN"
+        },
+        work: {
+            text: "PROYECTOS"
+        },
+        contact: {
+            text: "CONTACTO"
+        }
+    }
 };
 
 export const home = {
@@ -52,15 +64,15 @@ export const home = {
 
 export const who = {
     en: {
-        title: "Who r' u'?",
+        title: "Who's Mac?",
         subtitles: [
             "Analytic",
             "Social",
             "Responsible",
             "Creative",
-            "Persistent",
+            "Persistent"
         ],
-        description: "able man to solve any problem related to my skills logically with ease of adaptation.",
+        description: "capable man to solve any problem related to my skills logically with ease of adaptation.",
         skills: {
             title: "Skills",
             elements: [
@@ -86,7 +98,7 @@ export const who = {
                 "Vuetify",
                 "VSCode",
                 "MySQL",
-                "MongoDB",
+                "MongoDB"
             ]
         }
     },
@@ -94,7 +106,16 @@ export const who = {
 };
 
 export const work = {
-    en: {},
+    en: {
+        title: "My work",
+        options: [
+            "Mobile Applications",
+            "Workshops",
+            "Web Applications",
+            "Desktop Applications",
+            "Fun"
+        ],
+    },
     es: {}
 };
 

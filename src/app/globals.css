@@ -32,8 +32,8 @@
 
 /* @media (prefers-color-scheme: dark) {
   :root {
-    ...vars
-    --box-shadow-color: rgba(255, 255, 255, 0.25);
+    --text-color: rgba(255, 255, 255);
+    --background-color: rgba(0, 0, 0);
   }
 } */
 
@@ -179,7 +179,7 @@ span {
   clip-path: polygon(100% 0, 0% 0, 100% 100%);
 }
 
-/* WHO IS MAC */
+/* WHO */
 
 .container-who {
   display: flex;
@@ -250,7 +250,12 @@ span {
 }
 
 .mac-chip {
-  background-color: var(--background-color-2);
+  background-color: var(--background-color-1);
   font-family: soraBold;
+  color: var(--primary-color);
   padding: 10px 25px;
 }
+
+/* PROJECTS */
+
+.container-work {}

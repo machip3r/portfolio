@@ -5,7 +5,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import { language, nav } from "@/util/translations";
-import { FaAngleDoubleDown, FaAngleDown, FaHandHolding, FaHandRock, FaHome, FaPlay } from "react-icons/fa";
+
+import { FaAngleDown } from "react-icons/fa";
 
 const Navbar = () => {
     const pathname = usePathname();
