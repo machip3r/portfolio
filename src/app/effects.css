@@ -1,0 +1,19 @@
+/* ICONS */
+
+.icon.primary {
+    color: var(--primary-color);
+}
+
+.icon.brightness {
+    transition: all 0.2s ease-in-out;
+}
+
+.icon.brightness:hover {
+    filter: brightness(2);
+}
+
+/* EMOJIS */
+
+.emoji {
+    filter: drop-shadow(2px 2px 25px var(--box-shadow-color)) !important;
+}

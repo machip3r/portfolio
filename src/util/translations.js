@@ -1,22 +1,28 @@
 export const language = "en";
 
+export const alts = {
+    en: {
+        surfing: "Mac surfing on the internet",
+        basketball: "Mac loves the basketball",
+        fire: "Mac is on fire",
+        coding: "Mac is a passionate developer"
+    },
+    es: {}
+};
+
 export const nav = {
     en: {
         home: {
             text: "HOME",
-            icon: "icon"
         },
         who: {
             text: "WHO IS MAC",
-            icon: "icon"
         },
         work: {
             text: "PROJECTS",
-            icon: "icon"
         },
         contact: {
             text: "CONTACT",
-            icon: "icon"
         },
 
     },
@@ -45,7 +51,45 @@ export const home = {
 };
 
 export const who = {
-    en: {},
+    en: {
+        title: "Who r' u'?",
+        subtitles: [
+            "Analytic",
+            "Social",
+            "Responsible",
+            "Creative",
+            "Persistent",
+        ],
+        description: "able man to solve any problem related to my skills logically with ease of adaptation.",
+        skills: {
+            title: "Skills",
+            elements: [
+                "HTML",
+                "CSS",
+                "JS",
+                "Python",
+                "Dart / Flutter",
+                "ReactJS",
+                "NextJS",
+                "VueJS",
+                "AWS",
+                "AWS Lambda",
+                "AWS API Gateway",
+                "AWS Amplify",
+                "AWS DynamoDB",
+                "Firebase / Firestore",
+                "Git",
+                "Adobe XD",
+                "Figma",
+                "ExpressJS",
+                "NodeJS",
+                "Vuetify",
+                "VSCode",
+                "MySQL",
+                "MongoDB",
+            ]
+        }
+    },
     es: {}
 };
 
