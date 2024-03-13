@@ -1,14 +1,14 @@
-/* ICONS */
+/* GENERAL */
 
-.icon.primary {
+.primary {
     color: var(--primary-color);
 }
 
-.icon.brightness {
+.brightness {
     transition: all 0.2s ease-in-out;
 }
 
-.icon.brightness:hover {
+.brightness:hover {
     filter: brightness(2);
 }
 

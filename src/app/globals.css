@@ -26,8 +26,11 @@
   --text-description-size: 2em;
   --text-title-skills-size: 1.5em;
   --text-skills-element-size: 0.9em;
+  --text-title-project: 1.2em;
+  --text-button-contact: 1.1em;
   --blurred-size: blur(6.25px);
   --icon-nav-size: 0.7em;
+  --padding-x-form: 2em;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -36,6 +39,23 @@
     --background-color: rgba(0, 0, 0);
   }
 } */
+
+@media (min-width: 1500px) {
+  :root {
+    --text-nav-size: 2em;
+    --text-pretitle-size: 3em;
+    --text-title-size: 9em;
+    --text-subtitle-size: 3em;
+    --text-list-size: 2.2em;
+    --text-description-size: 2em;
+    --text-title-skills-size: 2em;
+    --text-skills-element-size: 1.1em;
+    --text-title-project: 2em;
+    --text-button-contact: 1.5em;
+    --icon-nav-size: 3em;
+    --padding-x-form: 15em;
+  }
+}
 
 /* FONT */
 
@@ -57,6 +77,11 @@
 @font-face {
   font-family: sarabunRegular;
   src: url(../../public/assets/font/Sarabun/Sarabun-Regular.ttf);
+}
+
+@font-face {
+  font-family: sarabunBold;
+  src: url(../../public/assets/font/Sarabun/Sarabun-Bold.ttf);
 }
 
 /* GENERAL */
@@ -99,6 +124,10 @@ span {
 
 
 /* NAVBAR */
+
+.container-nav {
+  z-index: 1;
+}
 
 .container-nav nav {
   background: var(--background-color-blur-1);
@@ -259,3 +288,82 @@ span {
 /* PROJECTS */
 
 .container-work {}
+
+.container-projects {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.container-projects .project {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--background-color-1);
+}
+
+.container-projects .project .project-title {
+  font-size: var(--text-title-project);
+}
+
+.container-projects .project .project-images {}
+
+.container-projects .project .project-images .image {}
+
+.container-projects .project .project-images .image:nth-child(1) {}
+
+.container-projects .project .project-images .image:nth-child(2) {}
+
+.container-projects .project .project-images .image:nth-child(3) {}
+
+.container-projects.project.project-title {}
+
+/* CONTACT */
+
+.container-contact {}
+
+.container-contact .container-form {
+  padding-left: var(--padding-x-form);
+  padding-right: var(--padding-x-form);
+}
+
+.container-contact .container-mac-links {
+  padding-left: var(--padding-x-form);
+  padding-right: var(--padding-x-form);
+}
+
+.container-contact .container-form input,
+.container-contact .container-form textarea {
+  width: 100%;
+  font-family: sarabunRegular;
+  border: 1px solid var(--background-color-2);
+  padding: 10px 20px;
+}
+
+.container-contact .container-form input:focus,
+.container-contact .container-form textarea:focus {
+  background-color: var(--background-color-1);
+}
+
+.container-contact .container-form input {
+  height: 50px;
+}
+
+.container-contact .container-form textarea {
+  min-height: 50px;
+  max-height: 250px;
+}
+
+.container-contact .container-form button {
+  width: 100%;
+  height: 60px;
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  font-family: sarabunBold;
+  font-size: var(--text-button-contact);
+}

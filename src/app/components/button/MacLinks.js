@@ -4,9 +4,9 @@ import { links } from "@/util/links";
 
 import { FaGithub, FaInstagram, FaLinkedin, FaTelegram } from "react-icons/fa";
 
-const MacLinks = () => {
+const MacLinks = ({ className }) => {
     return (
-        <div className="mt-10 flex justify-start items-center gap-7">
+        <div className={className}>
             <Link href={links[ "gh" ]} target="_blank">
                 <FaGithub className="icon primary brightness" size={50} />
             </Link>

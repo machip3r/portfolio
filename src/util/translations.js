@@ -120,7 +120,9 @@ export const work = {
 };
 
 export const contact = {
-    en: {},
+    en: {
+        title: "Let's talk",
+    },
     es: {}
 };
 
