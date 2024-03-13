@@ -15,6 +15,23 @@ const Who = () => {
             <div className="container-page container-who">
                 <div className="left">
                     <h1>{who[ language ][ "title" ]}</h1>
+                    <div className="right-2 my-5">
+                        <Image
+                            className="emoji selfie-surfing"
+                            src={MacSurfing}
+                            alt={alts[ language ][ "surfing" ]}
+                        />
+                        <Image
+                            className="emoji selfie-basketball"
+                            src={MacBasketball}
+                            alt={alts[ language ][ "basketball" ]}
+                        />
+                        <Image
+                            className="emoji selfie-fire"
+                            src={MacFire}
+                            alt={alts[ language ][ "fire" ]}
+                        />
+                    </div>
                     <div className="adjectives">
                         <span className="active">
                             {who[ language ][ "subtitles" ][ 0 ]},

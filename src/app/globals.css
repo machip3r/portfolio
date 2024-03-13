@@ -22,6 +22,14 @@
   --text-pretitle-size: 2em;
   --text-title-size: 8em;
   --text-subtitle-size: 3em;
+  --image-home-emoji-size: 5%;
+  --image-emoji-size: 25%;
+  --image-emoji-2-size: 13%;
+  --image-selfie-width: 40%;
+  --image-selfie-height: 80vh;
+  --image-selfie-2-width: 100%;
+  --image-selfie-2-height: 30vh;
+  --text-selfie-left-width: 60%;
   --text-list-size: 1.8em;
   --text-description-size: 2em;
   --text-title-skills-size: 1.5em;
@@ -36,26 +44,19 @@
 /* @media (prefers-color-scheme: dark) {
   :root {
     --text-color: rgba(255, 255, 255);
-    --background-color: rgba(0, 0, 0);
+    --background-color: rgba(30, 30, 30);
+
+    --primary-color: rgba(244, 235, 226, 1);
+    --secondary-color: rgba(243, 106, 54, 1);
+    --accent-color: rgba(246, 197, 128, 1);
+
+    --background-color-1: rgba(28, 69, 125, 1);
+    --background-color-2: rgba(204, 182, 168, 1);
+    --background-color-blur-1: rgba(28, 69, 125, 0.25);
+
+    --box-shadow-color: rgba(255, 255, 255, 0.2);
   }
 } */
-
-@media (min-width: 1500px) {
-  :root {
-    --text-nav-size: 2em;
-    --text-pretitle-size: 3em;
-    --text-title-size: 9em;
-    --text-subtitle-size: 3em;
-    --text-list-size: 2.2em;
-    --text-description-size: 2em;
-    --text-title-skills-size: 2em;
-    --text-skills-element-size: 1.1em;
-    --text-title-project: 2em;
-    --text-button-contact: 1.5em;
-    --icon-nav-size: 3em;
-    --padding-x-form: 15em;
-  }
-}
 
 /* FONT */
 
@@ -114,6 +115,7 @@ span {
 .container-page {
   width: 100%;
   padding: 50px;
+  margin-bottom: 150px;
 }
 
 .container-page h1 {
@@ -135,6 +137,14 @@ span {
   box-shadow: 2px 2px 25px var(--box-shadow-color);
   backdrop-filter: var(--blurred-size);
   color: var(--primary-color);
+}
+
+.container-nav nav {
+  width: 90%;
+}
+
+.container-nav .icon-nav {
+  display: none;
 }
 
 .container-nav nav li {
@@ -170,6 +180,10 @@ span {
 .container-home ul {
   font-family: sarabunRegular;
   font-size: var(--text-list-size);
+}
+
+.container-home .emoji {
+  width: var(--image-home-emoji-size);
 }
 
 .triangles {
@@ -213,15 +227,16 @@ span {
 .container-who {
   display: flex;
   gap: 25px;
+  justify-content: space-evenly;
 }
 
 .container-who .left {
-  width: 60%;
+  width: var(--text-selfie-left-width);
 }
 
 .container-who .right {
-  width: 40%;
-  height: 80vh;
+  width: var(--image-selfie-width);
+  height: var(--image-selfie-height);
   background: url(../../public/assets/image/MacSelfie.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -235,6 +250,7 @@ span {
 
 .container-who .right .emoji {
   position: absolute;
+  width: var(--image-emoji-size);
 }
 
 .container-who .right .selfie-basketball {
@@ -250,6 +266,43 @@ span {
 }
 
 .container-who .right .selfie-surfing {
+  top: -50px;
+  right: -50px;
+}
+
+.container-who .right-2 {
+  display: none;
+  width: var(--image-selfie-2-width);
+  height: var(--image-selfie-2-height);
+  background: url(../../public/assets/image/MacSelfie.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container-who .right-2 {
+  position: relative;
+  z-index: -1;
+}
+
+.container-who .right-2 .emoji {
+  position: absolute;
+  width: var(--image-emoji-2-size);
+}
+
+.container-who .right-2 .selfie-basketball {
+  bottom: -50px;
+  right: 200px;
+  transform: rotate(30deg);
+}
+
+.container-who .right-2 .selfie-fire {
+  bottom: 15px;
+  left: -50px;
+  transform: rotate(-20deg);
+}
+
+.container-who .right-2 .selfie-surfing {
   top: -50px;
   right: -50px;
 }
@@ -366,4 +419,157 @@ span {
   color: var(--background-color);
   font-family: sarabunBold;
   font-size: var(--text-button-contact);
+}
+
+@media (min-width: 1500px) {
+  :root {
+    --text-nav-size: 2em;
+    --text-pretitle-size: 3em;
+    --text-title-size: 9em;
+    --image-home-emoji-size: 5%;
+    --text-subtitle-size: 3em;
+    --image-selfie-width: 40%;
+    --image-selfie-height: 80vh;
+    --text-selfie-left-width: 60%;
+    --text-list-size: 2.2em;
+    --text-description-size: 2em;
+    --text-title-skills-size: 2em;
+    --text-skills-element-size: 1.1em;
+    --text-title-project: 2em;
+    --text-button-contact: 1.5em;
+    --icon-nav-size: 3em;
+    --padding-x-form: 15em;
+  }
+}
+
+@media (max-width: 1500px) {
+  :root {
+    --image-selfie-width: 35%;
+    --image-selfie-height: 65vh;
+    --text-selfie-left-width: 65%
+  }
+}
+
+@media (max-width: 1400px) {
+  :root {
+    --text-nav-size: 1.5em;
+    --text-pretitle-size: 3em;
+    --text-title-size: 7em;
+    --text-subtitle-size: 2.5em;
+    --text-description-size: 1.8em;
+    --image-home-emoji-size: 7%;
+  }
+}
+
+@media (max-width: 1300px) {
+  :root {
+    --image-emoji-size: 40%;
+    --image-home-emoji-size: 8%;
+  }
+}
+
+@media (max-width: 1250px) {
+  :root {
+    --text-nav-size: 1.5em;
+    --text-pretitle-size: 3em;
+    --text-title-size: 6.5em;
+    --text-subtitle-size: 2.5em;
+    --text-description-size: 1.8em;
+    --image-selfie-width: 30%;
+    --image-selfie-height: 70vh;
+    --text-selfie-left-width: 70%;
+    --image-home-emoji-size: 9%;
+  }
+
+  .container-skills {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 1100px) {
+  :root {
+    --text-selfie-left-width: 100%;
+    --image-home-emoji-size: 10%;
+  }
+
+  .container-page {
+    padding: 25px;
+  }
+
+  .container-who .right {
+    display: none;
+  }
+
+  .container-who .right-2 {
+    display: block;
+  }
+}
+
+@media (max-width: 800px) {
+  :root {
+    --text-nav-size: 1.3em;
+    --text-pretitle-size: 2em;
+    --text-title-size: 5em;
+    --text-subtitle-size: 2em;
+    --image-home-emoji-size: 12%;
+  }
+
+  .container-nav .text-nav {
+    display: none;
+  }
+
+  .container-nav .icon-nav {
+    display: block;
+  }
+}
+
+@media (max-width: 700px) {
+  :root {
+    --image-emoji-2-size: 20%;
+  }
+
+  .container-who .right-2 .selfie-basketball {
+    bottom: -25px;
+    right: 70px;
+  }
+
+  .container-who .right-2 .selfie-fire {
+    bottom: 7px;
+    left: -30px;
+  }
+
+  .container-who .right-2 .selfie-surfing {
+    top: -25px;
+    right: -25px;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --text-nav-size: 1.3em;
+    --text-pretitle-size: 2em;
+    --text-title-size: 5em;
+    --text-subtitle-size: 2em;
+    --image-home-emoji-size: 12%;
+    /* --text-nav-size: 1.5em;
+    --text-pretitle-size: 2em;
+    --text-title-size: 8em;
+    --text-subtitle-size: 3em;
+    --image-emoji-size: 25%;
+    --image-emoji-2-size: 13%;
+    --image-selfie-width: 40%;
+    --image-selfie-height: 80vh;
+    --image-selfie-2-width: 100%;
+    --image-selfie-2-height: 30vh;
+    --text-selfie-left-width: 60%;
+    --text-list-size: 1.8em;
+    --text-description-size: 2em;
+    --text-title-skills-size: 1.5em;
+    --text-skills-element-size: 0.9em;
+    --text-title-project: 1.2em;
+    --text-button-contact: 1.1em;
+    --blurred-size: blur(6.25px);
+    --icon-nav-size: 0.7em;
+    --padding-x-form: 2em; */
+  }
 }
