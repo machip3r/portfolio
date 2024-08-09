@@ -38,7 +38,7 @@ const Home = () => {
           }
         </ul>
 
-        <MacLinks className="mt-10 flex justify-start items-center gap-7" />
+        <MacLinks className="mt-8 flex justify-start items-center gap-7" />
 
         <div className="triangles">
           <div className="triangle triangle-1"></div>

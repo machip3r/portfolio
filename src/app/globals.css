@@ -23,6 +23,7 @@
   --text-title-size: 8em;
   --text-subtitle-size: 3em;
   --image-home-emoji-size: 5%;
+  --image-title-emoji-size: 170px;
   --image-emoji-size: 25%;
   --image-emoji-2-size: 13%;
   --image-selfie-width: 40%;
@@ -124,7 +125,6 @@ span {
   text-shadow: 5px 2.5px 50px var(--box-shadow-color);
 }
 
-
 /* NAVBAR */
 
 .container-nav {
@@ -193,6 +193,7 @@ span {
   bottom: 0;
   height: 100%;
   width: 40%;
+  z-index: -1;
 }
 
 .triangle {
@@ -342,6 +343,10 @@ span {
 
 .container-work {}
 
+.container-work .emoji {
+  width: var(--image-title-emoji-size);
+}
+
 .container-projects {
   display: flex;
   flex-direction: row;
@@ -379,6 +384,10 @@ span {
 /* CONTACT */
 
 .container-contact {}
+
+.container-contact .emoji {
+  width: var(--image-title-emoji-size);
+}
 
 .container-contact .container-form {
   padding-left: var(--padding-x-form);
@@ -421,17 +430,26 @@ span {
   font-size: var(--text-button-contact);
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1900px) {
   :root {
-    --text-nav-size: 2em;
     --text-pretitle-size: 3em;
     --text-title-size: 9em;
     --image-home-emoji-size: 5%;
     --text-subtitle-size: 3em;
+  }
+}
+
+@media (min-width: 1500px) {
+  :root {
+    --text-nav-size: 2em;
+    --text-pretitle-size: 2.5em;
+    --text-title-size: 8em;
+    --image-home-emoji-size: 4.5%;
+    --text-subtitle-size: 2.5em;
     --image-selfie-width: 40%;
     --image-selfie-height: 80vh;
     --text-selfie-left-width: 60%;
-    --text-list-size: 2.2em;
+    --text-list-size: 2em;
     --text-description-size: 2em;
     --text-title-skills-size: 2em;
     --text-skills-element-size: 1.1em;
@@ -440,13 +458,18 @@ span {
     --icon-nav-size: 3em;
     --padding-x-form: 15em;
   }
+
+  .container-nav nav {
+    width: 50%;
+  }
 }
 
 @media (max-width: 1500px) {
   :root {
     --image-selfie-width: 35%;
     --image-selfie-height: 65vh;
-    --text-selfie-left-width: 65%
+    --text-selfie-left-width: 65%;
+    --image-title-emoji-size: 150px;
   }
 }
 
@@ -458,6 +481,7 @@ span {
     --text-subtitle-size: 2.5em;
     --text-description-size: 1.8em;
     --image-home-emoji-size: 7%;
+    --image-title-emoji-size: 130px;
   }
 }
 
@@ -465,6 +489,7 @@ span {
   :root {
     --image-emoji-size: 40%;
     --image-home-emoji-size: 8%;
+    --image-title-emoji-size: 120px;
   }
 }
 
@@ -510,16 +535,10 @@ span {
     --text-nav-size: 1.3em;
     --text-pretitle-size: 2em;
     --text-title-size: 5em;
-    --text-subtitle-size: 2em;
+    --text-subtitle-size: 2.5em;
+    --text-list-size: 2.1em;
     --image-home-emoji-size: 12%;
-  }
-
-  .container-nav .text-nav {
-    display: none;
-  }
-
-  .container-nav .icon-nav {
-    display: block;
+    --image-title-emoji-size: 90px;
   }
 }
 
@@ -546,11 +565,13 @@ span {
 
 @media (max-width: 600px) {
   :root {
-    --text-nav-size: 1.3em;
-    --text-pretitle-size: 2em;
-    --text-title-size: 5em;
-    --text-subtitle-size: 2em;
-    --image-home-emoji-size: 12%;
+    --text-pretitle-size: 1.7em;
+    --text-title-size: 4em;
+    --text-subtitle-size: 1.6em;
+    --text-description-size: 1.6em;
+    --text-list-size: 1.7em;
+    --image-home-emoji-size: 10%;
+    --image-selfie-2-height: 25vh;
     /* --text-nav-size: 1.5em;
     --text-pretitle-size: 2em;
     --text-title-size: 8em;
@@ -571,5 +592,35 @@ span {
     --blurred-size: blur(6.25px);
     --icon-nav-size: 0.7em;
     --padding-x-form: 2em; */
+  }
+
+  .container-nav .text-nav {
+    display: none;
+  }
+
+  .container-nav .icon-nav {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  :root {
+    --text-pretitle-size: 1.4em;
+    --text-title-size: 3.7em;
+    --text-subtitle-size: 1.3em;
+    --text-description-size: 1.3em;
+    --text-list-size: 1.4em;
+    --image-home-emoji-size: 9%;
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    --text-pretitle-size: 1.2em;
+    --text-title-size: 2.8em;
+    --text-subtitle-size: 1.1em;
+    --text-description-size: 1.1em;
+    --text-list-size: 1.2em;
+    --image-home-emoji-size: 9%;
   }
 }

@@ -22,10 +22,10 @@ const Contact = () => {
                         />
                     </span>
                 </div>
-                <div className="container-mac-links">
-                    <MacLinks className="flex justify-between mb-5" />
+                <div className="container-mac-links mt-20">
+                    <MacLinks className="flex items-center justify-between mb-5" />
                 </div>
-                <div className="container-form">
+                <div className="container-form mt-10">
                     <input className="mb-3" type="text" name="name" id="name" placeholder="Name" />
                     <input className="mb-3" type="text" name="name" id="name" placeholder="Email" />
                     <textarea className="mb-3" name="message" id="message" placeholder="Message"></textarea>

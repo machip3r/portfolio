@@ -6,7 +6,7 @@ import { FaGithub, FaInstagram, FaLinkedin, FaTelegram } from "react-icons/fa";
 
 const MacLinks = ({ className }) => {
     return (
-        <div className={className}>
+        <div className={"mac-links " + className}>
             <Link href={links[ "gh" ]} target="_blank">
                 <FaGithub className="icon primary brightness" size={50} />
             </Link>

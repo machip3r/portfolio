@@ -18,7 +18,6 @@ const Work = () => {
                             className="ml-10 emoji"
                             src={MacFire}
                             alt={alts[ language ][ "fire" ]}
-                            width={140}
                         />
                     </span>
                 </div>

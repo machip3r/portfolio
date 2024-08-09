@@ -55,7 +55,7 @@ export const home = {
         ],
         positions: [
             "FullStack Developer",
-            "Computer Systems Engineer",
+            "Computer Science Engineer",
             "Programming Technician"
         ]
     },
