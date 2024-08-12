@@ -175,6 +175,8 @@ span {
 
 .container-home div.aka {
   font-size: var(--text-subtitle-size);
+  display: flex;
+  flex-direction: row;
 }
 
 .container-home ul {
@@ -184,6 +186,7 @@ span {
 
 .container-home .emoji {
   width: var(--image-home-emoji-size);
+  display: inline;
 }
 
 .triangles {
@@ -221,6 +224,156 @@ span {
   width: 30%;
   background-color: var(--secondary-color);
   clip-path: polygon(100% 0, 0% 0, 100% 100%);
+}
+
+.words {
+  display: inline;
+  text-indent: 10px;
+}
+
+.words span {
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+  font-weight: 700;
+}
+
+.rotate span {
+  -webkit-animation: rotateWord 10s linear infinite;
+  animation: rotateWord 10s linear infinite;
+}
+
+.words span:nth-child(2) {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+.words span:nth-child(3) {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.words span:nth-child(4) {
+  -webkit-animation-delay: 4.5s;
+  animation-delay: 4.5s;
+}
+
+.words span:nth-child(5) {
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+}
+
+@-webkit-keyframes rotateWord {
+  0% {
+    opacity: 0;
+  }
+
+  2% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+  }
+
+  5% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+
+  25% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+
+  27% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes rotateWord {
+  0% {
+    opacity: 0;
+  }
+
+  2% {
+    opacity: 0;
+    -ms-transform: translateY(-30px);
+  }
+
+  5% {
+    opacity: 1;
+    -ms-transform: translateY(0px);
+  }
+
+  17% {
+    opacity: 1;
+    -ms-transform: translateY(0px);
+  }
+
+  20% {
+    opacity: 0;
+    -ms-transform: translateY(30px);
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rotateWord {
+  0% {
+    opacity: 0;
+  }
+
+  2% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+
+  5% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+
+  17% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+
+  20% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .words {
+    display: block;
+    text-indent: 0px;
+  }
 }
 
 /* WHO */

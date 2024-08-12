@@ -47,11 +47,11 @@ export const home = {
         title: "Braulio Baca",
         subtitle: "aka",
         akas: [
-            "MacHip3r",
-            "Mac",
-            "Braulio Mac",
-            "BrauMac",
-            "MacBrau"
+            "MacHip3r 🏄‍♂️",
+            "Mac 🏄‍♂️",
+            "Braulio Mac 🏄‍♂️",
+            "BrauMac 🏄‍♂️",
+            "MacBrau 🏄‍♂️"
         ],
         positions: [
             "FullStack Developer",

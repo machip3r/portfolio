@@ -29,7 +29,7 @@ const Contact = () => {
                     <input className="mb-3" type="text" name="name" id="name" placeholder="Name" />
                     <input className="mb-3" type="text" name="name" id="name" placeholder="Email" />
                     <textarea className="mb-3" name="message" id="message" placeholder="Message"></textarea>
-                    <button type="submit">We will be a good team!</button>
+                    <button type="submit">Send</button>
                 </div>
             </div>
         </main>

@@ -40,7 +40,7 @@ const Navbar = () => {
                                         <FaUser className="icon-nav" size={(pathname === "/who-is-mac") ? 33 : 28} />
                                     </Link>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <Link className="flex flex-col justify-center items-center" href="/work-hard-mac">
                                         <span className={"icon-selector" + ((pathname === "/work-hard-mac") ? " active" : "")}>
                                             <FaAngleDown size={25} />
@@ -50,7 +50,7 @@ const Navbar = () => {
                                         </p>
                                         <FaHammer className="icon-nav" size={(pathname === "/work-hard-mac") ? 35 : 30} />
                                     </Link>
-                                </li>
+                                </li> */}
                                 <li>
                                     <Link className="flex flex-col justify-center items-center" href="/better-call-mac">
                                         <span className={"icon-selector" + ((pathname === "/better-call-mac") ? " active" : "")}>
