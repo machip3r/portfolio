@@ -33,9 +33,9 @@ const Who = () => {
                         />
                     </div>
                     <div className="adjectives">
-                        <span className="active">
-                            {who[ language ][ "subtitles" ][ 0 ]},
-                        </span>
+                        <div className="words rotate">
+                            {who[ language ][ "subtitles" ].map((e, i) => (<span key={i} className="active">{e}</span>))}
+                        </div>
                     </div>
                     <div className="short-description">
                         <p>{who[ language ][ "description" ]}</p>

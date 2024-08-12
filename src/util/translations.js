@@ -66,11 +66,11 @@ export const who = {
     en: {
         title: "Who's Mac?",
         subtitles: [
-            "Analytic",
-            "Social",
-            "Responsible",
-            "Creative",
-            "Persistent"
+            "Analytic,",
+            "Social,",
+            "Responsible,",
+            "Creative,",
+            "Persistent,"
         ],
         description: "capable man to solve any problem related to my skills logically with ease of adaptation.",
         skills: {

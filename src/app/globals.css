@@ -239,8 +239,8 @@ span {
 }
 
 .rotate span {
-  -webkit-animation: rotateWord 10s linear infinite;
-  animation: rotateWord 10s linear infinite;
+  -webkit-animation: rotateWord 7.5s linear infinite;
+  animation: rotateWord 7.5s linear infinite;
 }
 
 .words span:nth-child(2) {
@@ -467,6 +467,7 @@ span {
 
 .container-who .short-description {
   font-size: var(--text-description-size);
+  margin-top: 90px;
 }
 
 .container-who .skills {
