@@ -42,7 +42,7 @@
   --padding-x-form: 2em;
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --text-color: rgba(255, 255, 255);
     --background-color: rgba(30, 30, 30);
@@ -57,7 +57,7 @@
 
     --box-shadow-color: rgba(255, 255, 255, 0.2);
   }
-} */
+}
 
 /* FONT */
 
