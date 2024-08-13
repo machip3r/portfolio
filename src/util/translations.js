@@ -54,7 +54,7 @@ export const home = {
             "MacBrau 🏄‍♂️"
         ],
         positions: [
-            "FullStack Developer",
+            "Software Developer",
             "Computer Science Engineer",
             "Programming Technician"
         ]

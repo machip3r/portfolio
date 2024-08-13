@@ -32,11 +32,11 @@ const Contact = () => {
         const formData = new FormData(form);
 
         try {
-            const res = await fetch('https://formspree.io/f/xdknzbab', {
-                method: 'POST',
+            const res = await fetch("https://formspree.io/f/" + process.env.FORMSPREE_ID, {
+                method: "POST",
                 body: formData,
                 headers: {
-                    'Accept': 'application/json'
+                    "Accept": "application/json"
                 }
             });
 
@@ -70,7 +70,7 @@ const Contact = () => {
                         />
                     </span>
                 </div>
-                <div className="container-mac-links mt-20">
+                <div className="container-mac-links mt-5">
                     <MacLinks className="flex items-center justify-between mb-5" />
                 </div>
                 <div className="container-form mt-10">

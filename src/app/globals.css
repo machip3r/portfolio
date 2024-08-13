@@ -727,6 +727,7 @@ span {
     --text-list-size: 1.7em;
     --image-home-emoji-size: 10%;
     --image-selfie-2-height: 25vh;
+
     /* --text-nav-size: 1.5em;
     --text-pretitle-size: 2em;
     --text-title-size: 8em;
@@ -756,6 +757,10 @@ span {
   .container-nav .icon-nav {
     display: block;
   }
+
+  .container-who div.adjectives {
+    margin-bottom: -20px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -766,6 +771,10 @@ span {
     --text-description-size: 1.3em;
     --text-list-size: 1.4em;
     --image-home-emoji-size: 9%;
+  }
+
+  .akas-home {
+    margin-left: 10px;
   }
 }
 

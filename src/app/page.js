@@ -16,7 +16,7 @@ const Home = () => {
         <h1>{home[ language ][ "title" ]}</h1>
         <div className="aka">
           {home[ language ][ "subtitle" ]}
-          <div className="words rotate">
+          <div className="words rotate akas-home">
             {home[ language ][ "akas" ].map((e, i) => (<span key={i} className="active">{e}</span>))}
           </div>
           {/* <Image
