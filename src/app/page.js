@@ -1,12 +1,8 @@
 import React from "react";
-import Image from "next/image";
 
 import MacLinks from "./components/button/MacLinks";
 
-import { alts, home, language } from "@/util/translations";
-
-import MacSurfing from "../../public/assets/image/MacSurfing.png";
-import Script from "next/script";
+import { home, language } from "@/util/translations";
 
 const Home = () => {
   return (
